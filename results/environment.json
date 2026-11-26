@@ -1,0 +1,31 @@
+{
+  "paper": "Paper 3 (KGC-MPC)",
+  "pytorch": "2.14.1+cu130",
+  "cuda_available": true,
+  "stages": {
+    "perturb": {
+      "cohorts": [
+        "Norman 2019 (GSE133344, 91,205 CRISPRa cells, 3 seeds x 4 splits)",
+        "Adamson 2016 (GSE90546, 68,603 CRISPRi UPR cells, 3 seeds)"
+      ],
+      "gpu": "Tesla T4",
+      "tasks": [
+        "perturb_splits_summary.csv",
+        "koopman_spectra_norman.json",
+        "rollout_stability.csv",
+        "cocktail_submodular.csv",
+        "safety_mpc_pareto.csv",
+        "gramian_prioritization_norman.csv"
+      ]
+    },
+    "sciplex": {
+      "cohorts": [
+        "Sci-Plex3 (GSE139944, 762,795 filtered cells across A549=244,281, MCF7=344,862, K562=173,652; 188 drugs x 4 doses)",
+        "Sci-Plex4 (GSM4150379, 98,397 filtered HDACi + metabolic cofactor dual-drug cells across A549=49,284, MCF7=49,113)"
+      ],
+      "gpu": "NVIDIA L4",
+      "sciplex4_elapsed_sec": 558.74
+    }
+  },
+  "total_single_cells_analyzed": 1021000
+}

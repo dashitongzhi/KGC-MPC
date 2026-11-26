@@ -1,0 +1,15 @@
+{
+  "paper": "Paper 3 (KGC-MPC)",
+  "benchmark": "TCST/Automatica Real-Time MPC (Clarabel+SCS+Batch Crossover), N=20 RPI Tube-MPC Ablations & Kreiss/Sensitivity Audits",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_tag": "A100",
+  "has_cvxpy": true,
+  "tf32_enabled": true,
+  "active_compute_procs_at_finish": 2,
+  "exclusive_gpu_verified": false,
+  "shared_gpu_note": "Executed on shared NVIDIA A100-SXM4-80GB (2 active GPU compute processes observed); CPU BLAS, Clarabel/SCS, and batched A100 timings recorded.",
+  "quick_mode": false,
+  "elapsed_sec": 2639.21
+}

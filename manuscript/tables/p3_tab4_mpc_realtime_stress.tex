@@ -1,0 +1,40 @@
+\begin{table}[t]
+\centering
+\caption{Real-Time FISTA-AL vs.\ Clarabel/SCS \& $N=20$ Target RPI Tube-MPC Ablations ($*$: BH-FDR $q<0.05$; $**$: $q<0.001$ vs.\ Full).}
+\label{tab:mpc_realtime_stress}
+\scriptsize
+\setlength{\tabcolsep}{0.9pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Solver ($k=8$) & Mean (ms) & p95 (ms) & Gap\% & Sat.\% \\
+\midrule
+FISTA A100 ($B{=}256$) & 0.17 & 0.17 & 0.28\% & 100.0\% \\
+FISTA A100 ($B{=}64,H{=}8$) & 0.76 & 0.82 & 0.28\% & 100.0\% \\
+FISTA CPU Warm ($H{=}8$) & 6.33 & 8.39 & 0.30\% & 100.0\% \\
+FISTA CPU Cold ($H{=}8$) & 6.11 & 7.59 & 0.24\% & 100.0\% \\
+SCS ADMM ($H{=}8$) & 23.73 & 24.20 & 0.00\% & 100.0\% \\
+Clarabel SOCP ($H{=}8$) & 42.23 & 43.10 & 0.00\% & 100.0\% \\
+FISTA CPU ($H{=}32,r{=}64$) & 18.61 & 20.11 & 0.17\% & 100.0\% \\
+SCS ADMM ($H{=}32$) & 307.74 & 317.88 & 0.00\% & 100.0\% \\
+Clarabel SOCP ($H{=}32$) & 2063.1 & 2114.7 & 0.00\% & 100.0\% \\
+FISTA CPU ($H{=}8,r{=}256$) & 13.22 & 13.57 & 0.17\% & 100.0\% \\
+Adam CPU ($H{=}8,r{=}64$) & 1388.0 & 1451.6 & -- & 0.0\% \\
+\midrule
+Regime & Method & Sat.\%$\uparrow$ & Norm.Off$\downarrow$ & Tgt Err.$\downarrow$ \\
+\midrule
+Mismatch $\kappa=5$ & Tube (Full) & \textbf{100.0\%} & \textbf{0.437$\pm$0.11} & 0.896 \\
+Mismatch $\kappa=5$ & w/o RPI & 95.4\% & 0.703$\pm$0.31$^{**}$ & 0.876 \\
+Mismatch $\kappa=5$ & Std Receding & 95.4\% & 0.698$\pm$0.30$^{**}$ & \textbf{0.875} \\
+Mismatch $\kappa=5$ & Box-LQR & 57.1\% & 53.7$^{**}$ & 9.438 \\
+Sat. $u_{\max}=0.25$ & Tube (Full) & \textbf{100.0\%} & \textbf{0.444$\pm$0.13} & 0.886 \\
+Sat. $u_{\max}=0.25$ & Std Receding & \textbf{100.0\%} & 0.622$\pm$0.19$^{**}$ & \textbf{0.857} \\
+Delay $\tau=3$ & Tube (Full) & \textbf{100.0\%} & 0.342$\pm$0.12 & 0.928 \\
+Delay $\tau=3$ & w/o Delay & \textbf{100.0\%} & 0.531$\pm$0.19$^{**}$ & 0.890 \\
+Delay $\tau=3$ & w/o Ancil. & \textbf{100.0\%} & \textbf{0.341$\pm$0.12}$^{*}$ & 0.929 \\
+Delay $\tau=3$ & Std Receding & \textbf{100.0\%} & 0.648$\pm$0.21$^{**}$ & \textbf{0.837} \\
+Delay $\tau=3$ & Box-LQR & 72.5\% & 1.067$\pm$0.38$^{**}$ & 0.908 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

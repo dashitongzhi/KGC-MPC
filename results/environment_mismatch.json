@@ -1,0 +1,7 @@
+{
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA L4",
+  "elapsed_sec": 268.7,
+  "stage": "mismatch"
+}

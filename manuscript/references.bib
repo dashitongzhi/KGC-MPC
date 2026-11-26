@@ -1,0 +1,390 @@
+% ==============================================================================
+% Verified Bibliography for Paper 3: KGC-MPC
+% Schur-Stable Bilinear Koopman System Identification, Finite-Horizon
+% Controllability Gramian Target Prioritization, and Safety-Constrained MPC
+% for Single-Cell Perturbation Control
+% ==============================================================================
+
+% --- 1. Koopman Operator Theory, EDMD/DMDc, Bilinear Koopman & Koopman MPC ---
+
+@article{koopman1931hamiltonian,
+  author  = {Koopman, B. O.},
+  title   = {Hamiltonian Systems and Transformation in {Hilbert} Space},
+  journal = {Proceedings of the National Academy of Sciences},
+  year    = {1931},
+  volume  = {17},
+  number  = {5},
+  pages   = {315--318},
+  doi     = {10.1073/pnas.17.5.315}
+}
+
+@article{mezic2013analysis,
+  author  = {Mezi{\'c}, Igor},
+  title   = {Analysis of Fluid Flows via Spectral Properties of the {Koopman} Operator},
+  journal = {Annual Review of Fluid Mechanics},
+  year    = {2013},
+  volume  = {45},
+  pages   = {357--378},
+  doi     = {10.1146/annurev-fluid-011212-140652}
+}
+
+@article{williams2015edmd,
+  author  = {Williams, Matthew O. and Kevrekidis, Ioannis G. and Rowley, Clarence W.},
+  title   = {A Data-Driven Approximation of the {Koopman} Operator: Extending Dynamic Mode Decomposition},
+  journal = {Journal of Nonlinear Science},
+  year    = {2015},
+  volume  = {25},
+  number  = {6},
+  pages   = {1307--1346},
+  doi     = {10.1007/s00332-015-9258-5}
+}
+
+@article{proctor2016dmdc,
+  author  = {Proctor, Joshua L. and Brunton, Steven L. and Kutz, J. Nathan},
+  title   = {Dynamic Mode Decomposition with Control},
+  journal = {SIAM Journal on Applied Dynamical Systems},
+  year    = {2016},
+  volume  = {15},
+  number  = {1},
+  pages   = {142--161},
+  doi     = {10.1137/15M1013857}
+}
+
+@article{korda2018linear,
+  author  = {Korda, Milan and Mezi{\'c}, Igor},
+  title   = {Linear predictors for nonlinear dynamical systems: {Koopman} operator meets model predictive control},
+  journal = {Automatica},
+  year    = {2018},
+  volume  = {93},
+  pages   = {149--160},
+  doi     = {10.1016/j.automatica.2018.01.036}
+}
+
+@article{bruder2021tro,
+  author  = {Bruder, Daniel and Fu, Xun and Gillespie, R. Brent and Remy, C. David and Vasudevan, Ram},
+  title   = {Data-Driven Control of Soft Robots Using {Koopman} Operator Theory},
+  journal = {IEEE Transactions on Robotics},
+  year    = {2021},
+  volume  = {37},
+  number  = {3},
+  pages   = {948--961},
+  doi     = {10.1109/TRO.2020.3038693}
+}
+
+@article{bruder2021ral,
+  author  = {Bruder, Daniel and Fu, Xun and Vasudevan, Ram},
+  title   = {Advantages of Bilinear {Koopman} Realizations for the Modeling and Control of Systems with Unknown Dynamics},
+  journal = {IEEE Robotics and Automation Letters},
+  year    = {2021},
+  volume  = {6},
+  number  = {3},
+  pages   = {4369--4376},
+  doi     = {10.1109/LRA.2021.3068117}
+}
+
+@article{brunton2022modern,
+  author  = {Brunton, Steven L. and Budi{\v{s}}i{\'c}, Marko and Kaiser, Eurika and Kutz, J. Nathan},
+  title   = {Modern {Koopman} Theory for Dynamical Systems},
+  journal = {SIAM Review},
+  year    = {2022},
+  volume  = {64},
+  number  = {2},
+  pages   = {229--340},
+  doi     = {10.1137/21M1401243}
+}
+
+% --- 2. Control Theory, Controllability Gramian, Stability & Constrained MPC ---
+
+@article{kalman1963controllability,
+  author  = {K{\'a}lm{\'a}n, Rudolf E. and Ho, Yu-Chi and Narendra, Kumpati S.},
+  title   = {Controllability of linear dynamical systems},
+  journal = {Contributions to Differential Equations},
+  year    = {1963},
+  volume  = {1},
+  pages   = {189--213}
+}
+
+@article{mayne2000constrained,
+  author  = {Mayne, D. Q. and Rawlings, J. B. and Rao, C. V. and Scokaert, P. O. M.},
+  title   = {Constrained model predictive control: Stability and optimality},
+  journal = {Automatica},
+  year    = {2000},
+  volume  = {36},
+  number  = {6},
+  pages   = {789--814},
+  doi     = {10.1016/S0005-1098(99)00214-9}
+}
+
+@article{mayne2005robust,
+  author  = {Mayne, D. Q. and Seron, M. M. and Rakovi{\'c}, S. V.},
+  title   = {Robust model predictive control of constrained linear systems with bounded disturbances},
+  journal = {Automatica},
+  year    = {2005},
+  volume  = {41},
+  number  = {2},
+  pages   = {219--224},
+  doi     = {10.1016/j.automatica.2004.08.019}
+}
+
+@book{rawlings2017model,
+  author    = {Rawlings, James B. and Mayne, David Q. and Diehl, Moritz},
+  title     = {Model Predictive Control: Theory, Computation, and Design},
+  edition   = {2nd},
+  publisher = {Nob Hill Publishing},
+  address   = {Madison, WI},
+  year      = {2017},
+  isbn      = {978-0-9759377-3-0}
+}
+
+@article{odonoghue2016conic,
+  author  = {O'Donoghue, Brendan and Chu, Eric and Parikh, Neal and Boyd, Stephen},
+  title   = {Conic Optimization via Operator Splitting and Homogeneous Self-Dual Embedding},
+  journal = {Journal of Optimization Theory and Applications},
+  year    = {2016},
+  volume  = {169},
+  number  = {3},
+  pages   = {1042--1068},
+  doi     = {10.1007/s10957-016-0892-3}
+}
+
+@book{trefethen2005spectra,
+  author    = {Trefethen, Lloyd N. and Embree, Mark},
+  title     = {Spectra and Pseudospectra: The Behavior of Nonnormal Matrices and Operators},
+  publisher = {Princeton University Press},
+  address   = {Princeton, NJ},
+  year      = {2005},
+  isbn      = {978-0-691-11946-5}
+}
+
+@article{beck2009fista,
+  author  = {Beck, Amir and Teboulle, Marc},
+  title   = {A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems},
+  journal = {SIAM Journal on Imaging Sciences},
+  year    = {2009},
+  volume  = {2},
+  number  = {1},
+  pages   = {183--202},
+  doi     = {10.1137/080716542}
+}
+
+@misc{goulart2024clarabel,
+  author       = {Goulart, Paul J. and Chen, Yuwen},
+  title        = {Clarabel: An interior-point solver for conic programs with quadratic objectives},
+  year         = {2024},
+  howpublished = {arXiv preprint arXiv:2405.12762}
+}
+
+@article{liu2011controllability,
+  author  = {Liu, Yang-Yu and Slotine, Jean-Jacques and Barab{\'a}si, Albert-L{\'a}szl{\'o}},
+  title   = {Controllability of complex networks},
+  journal = {Nature},
+  year    = {2011},
+  volume  = {473},
+  number  = {7346},
+  pages   = {167--173},
+  doi     = {10.1038/nature10011}
+}
+
+@article{yan2015spectrum,
+  author  = {Yan, Gang and Tsekenis, Georgios and Barzel, Baruch and Slotine, Jean-Jacques and Liu, Yang-Yu and Barab{\'a}si, Albert-L{\'a}szl{\'o}},
+  title   = {Spectrum of controlling and observing complex networks},
+  journal = {Nature Physics},
+  year    = {2015},
+  volume  = {11},
+  number  = {9},
+  pages   = {779--786},
+  doi     = {10.1038/nphys3422}
+}
+
+@article{pasqualetti2014controllability,
+  author  = {Pasqualetti, Fabio and Zampieri, Sandro and Bullo, Francesco},
+  title   = {Controllability Metrics, Limitations and Algorithms for Complex Networks},
+  journal = {IEEE Transactions on Control of Network Systems},
+  year    = {2014},
+  volume  = {1},
+  number  = {1},
+  pages   = {40--52},
+  doi     = {10.1109/TCNS.2014.2310254}
+}
+
+@article{summers2016submodularity,
+  author  = {Summers, Tyler H. and Cortesi, Fabrizio L. and Lygeros, John},
+  title   = {On Submodularity and Controllability in Complex Dynamical Networks},
+  journal = {IEEE Transactions on Control of Network Systems},
+  year    = {2016},
+  volume  = {3},
+  number  = {1},
+  pages   = {91--101},
+  doi     = {10.1109/TCNS.2015.2453711}
+}
+
+@book{boyd1994lmi,
+  author    = {Boyd, Stephen and El Ghaoui, Laurent and Feron, Eric and Balakrishnan, Venkataramanan},
+  title     = {Linear Matrix Inequalities in System and Control Theory},
+  publisher = {Society for Industrial and Applied Mathematics (SIAM)},
+  address   = {Philadelphia, PA},
+  year      = {1994},
+  isbn      = {0-89871-334-X}
+}
+
+@article{edelman1998geometry,
+  author  = {Edelman, Alan and Arias, Tom{\'a}s A. and Smith, Steven T.},
+  title   = {The Geometry of Algorithms with Orthogonality Constraints},
+  journal = {SIAM Journal on Matrix Analysis and Applications},
+  year    = {1998},
+  volume  = {20},
+  number  = {2},
+  pages   = {303--353},
+  doi     = {10.1137/S0895479895290954}
+}
+
+@article{nemhauser1978analysis,
+  author  = {Nemhauser, George L. and Wolsey, Laurence A. and Fisher, Marshall L.},
+  title   = {An analysis of approximations for maximizing submodular set functions---{I}},
+  journal = {Mathematical Programming},
+  year    = {1978},
+  volume  = {14},
+  number  = {1},
+  pages   = {265--294},
+  doi     = {10.1007/BF01588971}
+}
+
+% --- 3. Single-Cell Perturbation Datasets, Baselines & Computational Tools ---
+
+@article{dixit2016perturb,
+  author  = {Dixit, Atray and Parnas, Oren and Li, Biyu and Chen, Jenny and Fulco, Charles P. and Jerby-Arnon, Livnat and Marjanovic, Nemanja D. and Dionne, Danielle and Burks, Tyler and Raychowdhury, Raktima and Adamson, Britt and Norman, Thomas M. and Lander, Eric S. and Weissman, Jonathan S. and Friedman, Nir and Regev, Aviv},
+  title   = {{Perturb-Seq}: Dissecting Molecular Circuits with Scalable Single-Cell {RNA} Profiling of Pooled Genetic Screens},
+  journal = {Cell},
+  year    = {2016},
+  volume  = {167},
+  number  = {7},
+  pages   = {1853--1866.e17},
+  doi     = {10.1016/j.cell.2016.11.038}
+}
+
+@article{adamson2016multiplexed,
+  author  = {Adamson, Britt and Norman, Thomas M. and Jost, Marco and Cho, Min Y. and Nu{\~n}ez, James K. and Chen, Yuwen and Villalta, Jacqueline E. and Gilbert, Luke A. and Horlbeck, Max A. and Hein, Marco Y. and Pak, Ryan A. and Gray, Andrew N. and Gross, Carol A. and Dixit, Atray and Parnas, Oren and Regev, Aviv and Weissman, Jonathan S.},
+  title   = {A Multiplexed Single-Cell {CRISPR} Screening Platform Enables Systematic Dissection of the Unfolded Protein Response},
+  journal = {Cell},
+  year    = {2016},
+  volume  = {167},
+  number  = {7},
+  pages   = {1867--1882.e21},
+  doi     = {10.1016/j.cell.2016.11.048}
+}
+
+@article{norman2019exploring,
+  author  = {Norman, Thomas M. and Horlbeck, Max A. and Replogle, Joseph M. and Ge, Alex Y. and Xu, Albert and Jost, M. and Gilbert, Luke A. and Weissman, Jonathan S.},
+  title   = {Exploring genetic interaction manifolds constructed from rich single-cell phenotypes},
+  journal = {Science},
+  year    = {2019},
+  volume  = {365},
+  number  = {6455},
+  pages   = {786--793},
+  doi     = {10.1126/science.aax4438}
+}
+
+@article{srivatsan2020massively,
+  author  = {Srivatsan, Sanjay R. and McFaline-Figueroa, Jos{\'e} L. and Ramani, Vijay and Saunders, Lauren M. and Cao, Junyue and Packer, Jonathan S. and Pliner, Hannah A. and Jackson, Dana L. and Daza, Riza M. and Christiansen, Lena and Zhang, Fan and Steemers, Frank and Shendure, Jay and Trapnell, Cole},
+  title   = {Massively multiplex chemical transcriptomics at single-cell resolution},
+  journal = {Science},
+  year    = {2020},
+  volume  = {367},
+  number  = {6473},
+  pages   = {45--51},
+  doi     = {10.1126/science.aax6234}
+}
+
+@article{peidli2024scperturb,
+  author  = {Peidli, Stefan and Green, Tessa D. and Shen, Ciyue and Gro{\ss}, Torsten and Min, Joseph and Garda, Samuele and Yuan, Bo and Schumacher, Linus J. and Taylor-King, Jake P. and Marks, Debora S. and Luna, Augustin and Bl{\"u}thgen, Nils and Sander, Chris},
+  title   = {{scPerturb}: harmonized single-cell perturbation data},
+  journal = {Nature Methods},
+  year    = {2024},
+  volume  = {21},
+  number  = {3},
+  pages   = {531--540},
+  doi     = {10.1038/s41592-023-02144-y}
+}
+
+@article{lotfollahi2019scgen,
+  author  = {Lotfollahi, Mohammad and Wolf, F. Alexander and Theis, Fabian J.},
+  title   = {{scGen} predicts single-cell perturbation responses},
+  journal = {Nature Methods},
+  year    = {2019},
+  volume  = {16},
+  number  = {8},
+  pages   = {715--721},
+  doi     = {10.1038/s41592-019-0494-8}
+}
+
+@article{lotfollahi2023cpa,
+  author  = {Lotfollahi, Mohammad and Klimovskaia Susmelj, Anna and De Donno, Carlo and Hetzel, Leon and Ji, Yuge and Ibarra, Ignacio L. and Srivatsan, Sanjay R. and Naghipourfar, Mohsen and Daza, Riza M. and Martin, Beth and Shendure, Jay and McFaline-Figueroa, Jos{\'e} L. and Boyeau, Pierre and Wolf, F. Alexander and Yakubova, Nafissa and G{\"u}nnemann, Stephan and Trapnell, Cole and Lopez-Paz, David and Theis, Fabian J.},
+  title   = {Predicting cellular responses to complex perturbations in high-throughput screens},
+  journal = {Molecular Systems Biology},
+  year    = {2023},
+  volume  = {19},
+  number  = {6},
+  pages   = {e11517},
+  doi     = {10.15252/msb.202211517}
+}
+
+@article{roohani2024gears,
+  author  = {Roohani, Yusuf and Huang, Kexin and Leskovec, Jure},
+  title   = {Predicting transcriptional outcomes of novel multigene perturbations with {GEARS}},
+  journal = {Nature Biotechnology},
+  year    = {2024},
+  volume  = {42},
+  number  = {6},
+  pages   = {927--935},
+  doi     = {10.1038/s41587-023-01905-6}
+}
+
+@article{bunne2023cellot,
+  author  = {Bunne, Charlotte and Stark, Stefan G. and Gut, Gabriele and Sarabia Del Castillo, Jacobo and Levesque, Mitch and Lehmann, Kjong-Van and Pelkmans, Lucas and Krause, Andreas and R{\"a}tsch, Gunnar},
+  title   = {Learning single-cell perturbation responses using neural optimal transport},
+  journal = {Nature Methods},
+  year    = {2023},
+  volume  = {20},
+  number  = {11},
+  pages   = {1759--1768},
+  doi     = {10.1038/s41592-023-01969-x}
+}
+
+@inproceedings{bereket2023samsvae,
+  author    = {Bereket, Michael and Karaletsos, Theofanis},
+  title     = {Modelling Cellular Perturbations with the Sparse Additive Mechanism Shift Variational Autoencoder},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2023},
+  volume    = {36},
+  pages     = {1--12}
+}
+
+@article{piran2024biolord,
+  author  = {Piran, Zoe and Cohen, Niv and Hoshen, Yedid and Nitzan, Mor},
+  title   = {Disentanglement of single-cell data with biolord},
+  journal = {Nature Biotechnology},
+  year    = {2024},
+  volume  = {42},
+  number  = {11},
+  pages   = {1678--1683},
+  doi     = {10.1038/s41587-023-02079-x}
+}
+
+@inproceedings{paszke2019pytorch,
+  author    = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and K{\"o}pf, Andreas and Yang, Edward Z. and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+  title     = {{PyTorch}: An Imperative Style, High-Performance Deep Learning Library},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2019},
+  volume    = {32},
+  pages     = {8024--8035}
+}
+
+@article{wolf2018scanpy,
+  author  = {Wolf, F. Alexander and Angerer, Philipp and Theis, Fabian J.},
+  title   = {{SCANPY}: large-scale single-cell gene expression data analysis},
+  journal = {Genome Biology},
+  year    = {2018},
+  volume  = {19},
+  pages   = {15},
+  doi     = {10.1186/s13059-017-1382-0}
+}

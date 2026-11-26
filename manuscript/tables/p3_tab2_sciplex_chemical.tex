@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\caption{Chemical Perturbation Scaling on Sci-Plex3 ($N=762{,}795$ Cells, $188$ Drugs, $10\,\mu\mathrm{M}$ Holdout) \& Sci-Plex4 ($N=98{,}397$ Dual-Drug HDACi).}
+\label{tab:sciplex_chemical}
+\scriptsize
+\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{l|ccc|ccc|ccc}
+\toprule
+\multicolumn{1}{c|}{Sci-Plex3 ($10\,\mu\mathrm{M}$ Holdout)} & \multicolumn{3}{c|}{A549 ($244{,}281$ cells)} & \multicolumn{3}{c|}{MCF7 ($344{,}862$ cells)} & \multicolumn{3}{c}{K562 ($173{,}652$ cells)} \\
+Method & All MSE$\downarrow$ & DE20 $r\uparrow$ & Dir.$\uparrow$ & All MSE$\downarrow$ & DE20 $r\uparrow$ & Dir.$\uparrow$ & All MSE$\downarrow$ & DE20 $r\uparrow$ & Dir.$\uparrow$ \\
+\midrule
+KGC-MPC (Hill-Koopman) & \textbf{0.0188} & 0.752 & 0.925 & \textbf{0.0167} & \textbf{0.595} & 0.819 & \textbf{0.0123} & \textbf{0.523} & 0.787 \\
+CPA-Dose-AE & 0.0193 & \textbf{0.756} & 0.925 & 0.0173 & 0.545 & 0.801 & 0.0133 & 0.449 & 0.741 \\
+Unconstrained EDMD & 0.0260 & 0.745 & 0.922 & 0.0206 & 0.576 & 0.806 & 0.0150 & 0.475 & 0.761 \\
+LogDose-Linear & 0.0260 & 0.739 & 0.903 & 0.0217 & 0.557 & 0.787 & 0.0214 & 0.389 & 0.697 \\
+\midrule
+\multicolumn{1}{c|}{Sci-Plex4 Dual-Drug} & \multicolumn{4}{c|}{A549 ($49{,}284$ cells, $15$ combos)} & \multicolumn{5}{c}{MCF7 ($49{,}113$ cells, $15$ combos)} \\
+Method & All MSE$\downarrow$ & DE20 MSE$\downarrow$ & \multicolumn{1}{c}{DE20 $r\uparrow$} & \multicolumn{1}{c|}{Dir.$\uparrow$} & \multicolumn{2}{c}{All MSE$\downarrow$} & \multicolumn{1}{c}{DE20 MSE$\downarrow$} & DE20 $r\uparrow$ & Dir.$\uparrow$ \\
+\midrule
+KGC-MPC (Small-Gain) & \textbf{0.0190} & 0.4022 & \multicolumn{1}{c}{0.950} & \multicolumn{1}{c|}{0.977} & \multicolumn{2}{c}{0.0352} & \multicolumn{1}{c}{0.5150} & 0.846 & 0.907 \\
+KGC-Linear (No Bilin.) & 0.0235 & 0.5431 & \multicolumn{1}{c}{0.929} & \multicolumn{1}{c|}{0.970} & \multicolumn{2}{c}{0.0297} & \multicolumn{1}{c}{0.5373} & 0.929 & 0.987 \\
+KGC-Bilinear (Unclamped) & 0.0603 & 1.58 & \multicolumn{1}{c}{0.631} & \multicolumn{1}{c|}{0.790} & \multicolumn{2}{c}{0.0525} & \multicolumn{1}{c}{1.11} & 0.813 & 0.907 \\
+CPA-Dose-AE & 0.0255 & 0.2500 & \multicolumn{1}{c}{0.960} & \multicolumn{1}{c|}{0.983} & \multicolumn{2}{c}{\textbf{0.0192}} & \multicolumn{1}{c}{0.0898} & \textbf{0.983} & 1.000 \\
+Unconstrained EDMD & 0.0199 & 0.3977 & \multicolumn{1}{c}{\textbf{0.975}} & \multicolumn{1}{c|}{0.993} & \multicolumn{2}{c}{0.0230} & \multicolumn{1}{c}{0.3380} & 0.953 & 0.993 \\
+\bottomrule
+\end{tabular}
+\end{table*}

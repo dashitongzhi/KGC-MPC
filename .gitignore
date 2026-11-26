@@ -1,0 +1,27 @@
+# Python & Jupyter
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# macOS & Editors
+.DS_Store
+.vscode/
+.idea/
+
+# LaTeX build intermediates (keep main.tex, references.bib, figures/, tables/, and compiled PDFs)
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.fdb_latexmk
+manuscript/*.fls
+manuscript/*.log
+manuscript/*.out
+manuscript/*.synctex.gz
+manuscript/*.xdv
+manuscript/*.tmp

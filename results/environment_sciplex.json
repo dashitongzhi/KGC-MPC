@@ -1,0 +1,7 @@
+{
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA L4",
+  "elapsed_sec": 388.29,
+  "stage": "sciplex4"
+}
